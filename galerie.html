@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="de">
+<head>
+	<meta charset="utf-8"/>
+	<title> </title>
+	<meta name="description" content=" "/>
+	<meta name="keywords" content=" "/>
+	<meta http-equiv="X-UA-Compativble" content="IE=edge,chrome=1"/>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<link rel="stylesheet" href="css/fontello.css"/>
+	<link rel="stylesheet" href="Neue Ordner/css/fontello.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="jquery.scrollTo.min.js"></script>
+	<script>
+ 
+    $(document).ready(function() {
+    var NavY = $('.nav').offset().top;
+      
+    var stickyNav = function(){
+    var ScrollY = $(window).scrollTop();
+           
+    if (ScrollY > NavY) { 
+        $('.nav').addClass('sticky');
+    } else {
+        $('.nav').removeClass('sticky'); 
+    }
+    };
+      
+    stickyNav();
+      
+    $(window).scroll(function() {
+        stickyNav();
+    });
+    });
+</script>
+
+<script>
+	jQuery(function($)
+	{
+		//zresetuj scrolla
+		$.scrollTo(0);
+		$('#link1').click(function() { $.scrollTo($('#fische'), 1000); });
+		$('#link2').click(function() { $.scrollTo($('#Garnelen'), 1000); });
+		$('.scroll').click(function() { $.scrollTo($('body'), 1000); });
+	}
+	);
+	
+	//pokaz podczas przewijania
+	
+	$(window).scroll(function()
+		{
+            if($(this).scrollTop()>300) $('.scroll').fadeIn();
+            else $('.scroll').fadeOut();      
+        }
+        );
+</script>
+</head>
+
+<body>
+	<div class="container">
+		<a href="#" class="scroll"></a>
+			<header>
+				<div class="header">
+					<div class="logo">
+						<a href="index.html">Mein Gesellschafts<span style="color: #76944E">aquarium</span><img src="betta.png"width=100px; style="float: left;"/></a>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+				<div class="nav">
+					<ol>
+						<li><a href="#">über mich</a></li>
+						<li><a href="#">Fischopedia</a>
+							<ul>
+								<li><a id="link1" href="#">fische</a></li>
+								<li><a id="link2" href="#">garnelen</a></li>
+								<li><a href="#">schnecken</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Pflanzopedia</a>
+							<ul>
+								<li><a href="#">hintergrund</a></li>
+								<li><a href="#">mittelgrund</a></li>
+								<li><a href="#">vordergrund</a></li>
+								<li><a href="#">bodendecker</a></li>
+								<li><a href="#">moose</a></li>
+							</ul>
+						</li>
+						<li><a href="galerie.html">Galerie</a></li>
+						<li class="konto"><a href="login.html">anmelden</a></li>
+						<li class="konto"><a href="neuerskonto.html">neues Konto</a></li>
+					</ol>
+				</div>
+			</header>
+	<main>
+	
+		<article>
+	
+			<div class="containerG">
+	
+					<div class="postcard">
+						<div class="photo1">
+							<div class="overlay">
+							
+								<a href="#"><img src="aq11.jpg" alt="Pawel Bruski"></a>
+								<a class="link" href="#"><span class="ikona"><i class="icon-picture"></i><p> Pawel Bruski 2022</p></span></a>
+							
+							</div>
+						</div>
+						<p>Aquarium PP</p>
+					</div>
+	
+			</div>
+	
+		</article>
+	
+	</main>
+	
+	
+	
+	
+	
+			
+			<footer> meingeselschaftaquarium.de &copy Pawel Bruski 2022 </footer>
+	</div>
+
+</body>
+
+</html>

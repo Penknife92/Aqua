@@ -1,0 +1,329 @@
+body
+{
+	background-image: url("pattern.webp");
+	margin: 0 !important;
+}
+
+a
+{
+	text-decoration:none;
+	color: #5E694F
+}
+
+.container
+{
+	width: 100%;
+}
+
+.header
+{
+	width: 100%;
+	padding: 20px 0;
+}
+
+.logo
+{
+	width: 700px;
+	font-family: 'Shadows Into Light Two', cursive;
+	font-size: 48px;
+	text-decoration: bold;
+	color: #5E694F;
+	margin-left: auto;
+	margin-right: auto;
+	letter-spacing: 3px;
+}
+
+.nav
+{
+	width: 100%;
+	height: 40px;
+	padding: 0;
+	background-color: #94A37E;
+	border-bottom: 1px solid #1b6155#;
+	border-top: 1px solid #1b6155#;
+	text-align: center;
+}
+
+article
+{
+	width: 1000px;
+	padding-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+}
+
+footer
+{
+	witdth: 100%;
+	padding: 15px;
+	bottom: 0px;
+	text-align: center;
+	background-color: #94A37E;
+	color: #F0F7E6;
+}
+
+.sticky
+{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+ol
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 18px;
+	height: 30px;
+	line-height: 200%;
+	display: inline-block;
+}
+
+ol a
+{
+	color: #e1edea;
+	text-decoration: none;
+	display: block;
+}
+
+ol > li
+{
+	float: left;
+	width: 150px;
+	height: 40px;
+	border-right: 1px dashed #e1edea;
+}
+
+ol > li:first-child
+{
+	border-left: 1px dashed #e1edea;
+}
+
+ol > li:hover
+{
+	background-color: #85926d;
+}
+
+ol > li:hover > a
+{
+	color: #F0F7E6;
+}
+
+ol > li > ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 40px;
+	display: none;
+}
+
+ol > li:hover > ul
+{
+	display: block;
+}
+ol > li > ul > li
+{
+	background-color: #94A37E;
+	position: relative;
+	z-index: 100;
+	border-top: 1px dashed #ffffff;
+	
+}
+
+ol > li > ul > li a
+{
+	color: #F0F7E6;
+}
+
+ol > li > ul > li:hover 
+{
+	background-color: #85926d;
+	color: #F0F7E6;
+}
+
+ol > li > ul > li:hover > a
+{
+	color: #F0F7E6;
+}
+
+.scroll
+{
+	width: 64px;
+	height: 64px;
+	text-decoration: none;
+	background: url("scrollup.png") no-repeat 0px 0px;
+	position: fixed;
+	right: 20px;
+	bottom:20px;
+	display: none;
+}
+
+.nav > ol > li > .konto
+{
+	text-align: right;
+}
+
+.window
+{
+	width: 100%;
+	height: 600px;
+	background-colour: #f2fcfb;
+}
+.login
+{
+	width: 400px;
+	height: 200px;
+	background-colour: #278a79;
+	text-align: center;
+}
+
+/* ANMELDEN CSS */
+
+.logwindow
+{
+	width: 300px;
+	height:150px;
+	background-color: #EBEBEB;
+	-webkit-box-shadow: 10px 10px 59px -5px rgba(133,146,109,0.66);
+	-moz-box-shadow: 10px 10px 59px -5px rgba(133,146,109,0.66);
+	box-shadow: 10px 10px 59px -5px rgba(133,146,109,0.66);
+	margin: auto;
+	margin-top: 100px;
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+}
+
+.log
+{
+	padding: 10px;
+	text-align: center;
+}
+
+.button
+{
+	padding: 20px;
+}
+
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=e-mail]
+
+{
+	border-radius: 5px;
+	background-color: #fcfcfc;
+	height: 20px;
+	width: 150px;
+}
+
+input[type=submit]
+{
+	border-radius: 10px;
+	width: 120px;
+	height: 40px;
+	background-color: #76944E;
+	color: #fcfcfc;
+	border-color: #EBEBEB;
+	cursor: pointer; 
+}
+	
+/* KONTO */
+
+.nkonto
+{
+	text-align: center;
+	padding: 5px;
+}
+
+input[type=checkbox]
+{
+	width: 20px;
+	height: 20px;
+}
+
+.kontoerstellen
+{
+	padding: 20px 20px 0 20px;
+	background-color: #EBEBEB; 
+	width: 210px;
+	height: 380px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	border-radius: 10px;
+	-webkit-box-shadow: 10px 10px 59px -5px rgba(133,146,109,0.66);
+	-moz-box-shadow: 10px 10px 59px -5px rgba(133,146,109,0.66);
+	box-shadow: 10px 10px 59px -5px rgba(133,146,109,0.66);
+}
+
+/*Galerie*/
+
+.containerG
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	text-align: center;
+	padding: 0;
+	margin-bottom: 25px;
+}
+.postcard
+{
+	display: inline-block;
+	width:460px;
+	text-align: center;
+	padding: 5px;
+}
+
+.postcard p
+{
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.photo1
+{
+	width: 450px;
+}
+
+.overlay
+{
+	position: relative;
+	width: 450px;
+	height: 253px;
+}
+
+.overlay .link
+{
+	position: absolute;
+	display: block;
+	width: 450px;
+	height: 253px;
+	background-color: #292E22;
+	left: 0px;
+	bottom: 0px;
+	opacity:0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.overlay:hover .link
+{
+	opacity: 0.8;
+}
+
+.ikona
+{
+	display: block;
+	top: 25%;
+	position: relative;
+	font-size: 30px;
+	
+	
+}
+
